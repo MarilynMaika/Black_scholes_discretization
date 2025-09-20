@@ -12,9 +12,7 @@ The **Black–Scholes model** is a mathematical framework for pricing European-s
 
 Under these assumptions, the Black–Scholes equation provides an **analytic (closed-form)** solution for option prices. However, in many cases, especially when assumptions are violated, **numerical methods** are necessary. This project implements the **Crank–Nicolson method**—a fractional step scheme that blends **Forward-Time Central-Space (FTCS)** and **Backward-Time Central-Space (BTCS)** methods—for discretizing and solving the Black–Scholes partial differential equation given below:
 
-$$
-\frac{\partial V}{\partial t} + \frac{1}{2}\sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} + r S \frac{\partial V}{\partial S} - r V = 0
-$$
+`∂V/∂t + (1/2)σ²S² ∂²V/∂S² + rS ∂V/∂S − rV = 0`
 where:
 - **V(S, t)** — Price of the option as a function of stock price **S** and time **t**.  
 - **S** — Underlying asset (stock) price.  
